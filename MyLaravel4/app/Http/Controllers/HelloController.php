@@ -13,7 +13,7 @@ class HelloController extends Controller
         return view('pages.main', compact('ospiti'));
     }
 
-    public function main($id) {
+    public function ospiti($id) {
 
         $ospite = Ospiti::findOrFail($id);
 
